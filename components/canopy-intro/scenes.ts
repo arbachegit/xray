@@ -10,14 +10,14 @@ const HOLD = 14000
 export const SCENES: CanopyScene[] = [
   {
     bg: '#bcd0c0',
-    hero: 'Pergunte sobre o Brasil real',
+    hero: 'Resposta auditável sobre dado público',
     mockup: 'prompt',
     promptText: 'Qual o faturamento médio das ME do CNAE 47.11?',
     hold: HOLD,
   },
   {
     bg: '#f3ecdc',
-    hero: 'Receba a resposta auditável',
+    hero: 'Toda resposta com fonte ABNT',
     mockup: 'prompt',
     promptText: 'Compare arrecadação ISS de 2024 com 2023',
     hold: HOLD,
