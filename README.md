@@ -1,4 +1,4 @@
-# iconsaiXrayShowCase
+# xray
 
 Página showcase do **Icons.ai · Xray** — animação canônica (estilo Canopy intro) com 5 cenas que apresentam a IA descritiva sobre dados públicos brasileiros.
 
@@ -13,7 +13,7 @@ Página showcase do **Icons.ai · Xray** — animação canônica (estilo Canopy
 ## Estrutura
 
 ```
-iconsaiXrayShowCase/
+xray/
 ├── app/
 │   ├── layout.tsx        # Root layout com fontes Fraunces/Jakarta/JetBrains Mono
 │   ├── page.tsx          # Renderiza CanopyIntro com SCENES do produto
@@ -40,8 +40,8 @@ npm run dev
 Mesmo pipeline dos outros apps IconsAI:
 
 1. `npm run build` (gera `.next/standalone`)
-2. `rsync` para `/opt/iconsai-xray-showcase/app/` no DigitalOcean
-3. systemd unit `iconsai-xray-showcase.service` apontando para `node server.js -p 3101`
+2. `rsync` para `/opt/xray/app/` no DigitalOcean
+3. systemd unit `xray.service` apontando para `node server.js -p 3101`
 4. Caddy entrega `icon.iconsai.ai/xray/*` → `127.0.0.1:3101/xray/*`
 
 ## Cenas (5 totais)
@@ -57,10 +57,10 @@ Editar `components/canopy-intro/scenes.ts` para mudar o roteiro.
 ## Origem
 
 Componente `CanopyIntro` é compartilhado com:
-- iconsaiDiscoveryShowCase
-- iconsaiDiscoveryHealthShowCase
-- iconsaiTutorShowCase
-- iconsaiNandutiShowCase
-- iconsaiFiscalShowCase
+- discovery
+- discoveryhealth
+- tutor
+- nanduti
+- fiscal
 
 Manter sincronizado quando editar.
